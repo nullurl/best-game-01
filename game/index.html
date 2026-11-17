@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VOIDLIGHT — Last lantern of the Drift</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #050308;
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  #game {
+    width: min(1280px, 98vw);
+    height: auto;
+    aspect-ratio: 1280 / 800;
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 0 80px rgba(124, 58, 237, 0.35);
+    cursor: crosshair;
+    image-rendering: auto;
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="800"></canvas>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
